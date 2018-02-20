@@ -80,6 +80,7 @@
     display: block;
     position: absolute;
     z-index: 100;
+    top: 256px;
     bottom: 45px;
     left: 50%;
     margin-left: -16px;
