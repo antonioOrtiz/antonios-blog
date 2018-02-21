@@ -11,7 +11,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: block;
-    height: 38px;
+    height: 500px;
     padding: 1px 0 5px;
     width: auto;
 }
@@ -23,6 +23,7 @@
 @media only screen and (max-width: 900px) {
     .blog-logo img {
         padding: 4px 0;
+        height: 200px;
     }
 }
 
@@ -36,6 +37,6 @@
     }
 
     .blog-logo img {
-        height: 30px;
+        height: 400px;
     }
 }

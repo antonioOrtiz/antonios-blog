@@ -5,7 +5,7 @@
     max-width: 710px;
     margin: 4rem auto;
     padding-bottom: 4rem;
-    border-bottom: #ebf2f6 1px solid;
+    border-bottom: #5b2c13 1px solid;
     word-wrap: break-word;
 }
 
@@ -13,17 +13,17 @@
    just for the lolz and stylepoints. */
 .post::after {
     display: block;
-    content: "";
+    content: '';
     width: 7px;
     height: 7px;
-    border: #e7eef2 1px solid;
+    border: #5b2c13 1px solid;
     position: absolute;
     bottom: -5px;
     left: 50%;
     margin-left: -5px;
-    background: #fff;
+    background: #ffeed6;
     border-radius: 100%;
-    box-shadow: #fff 0 0 0 5px;
+    box-shadow: #5b2c13 0 0 0 5px;
 }
 
 .post-title a {
@@ -57,7 +57,7 @@ div.page-template .post-title {
 .post-meta {
     display: block;
     margin: 1.75rem 0 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
     line-height: 2.2rem;
     color: #9eabb3;
