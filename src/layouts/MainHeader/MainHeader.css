@@ -11,6 +11,26 @@
     overflow: hidden;
 }
 
+.polygon {
+    z-index: 0;
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.polygon svg {
+    width: 100%;
+    height: 100%;
+}
+.polygon svg polygon {
+    fill: #5b2c13;
+}
+
+.polygon-2 svg polygon {
+    fill: #df682b;
+}
+
 .main-header .inner {
     width: 80%;
 }
@@ -80,7 +100,7 @@
     display: block;
     position: absolute;
     z-index: 100;
-    top: 256px;
+    top: 280px;
     bottom: 45px;
     left: 50%;
     margin-left: -16px;
