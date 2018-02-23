@@ -7,7 +7,9 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
-body { margin: 0; }
+body {
+    margin: 0;
+}
 
 article,
 aside,
@@ -20,7 +22,9 @@ main,
 menu,
 nav,
 section,
-summary { display: block; }
+summary {
+    display: block;
+}
 
 audio,
 canvas,
@@ -36,16 +40,28 @@ audio:not([controls]) {
 }
 
 [hidden],
-template { display: none; }
-a { background-color: transparent; }
+template {
+    display: none;
+}
+a {
+    background-color: transparent;
+}
 
 a:active,
-a:hover { outline: 0; }
-abbr[title] { border-bottom: 1px dotted; }
+a:hover {
+    outline: 0;
+}
+abbr[title] {
+    border-bottom: 1px dotted;
+}
 
 b,
-strong { font-weight: bold; }
-dfn { font-style: italic; }
+strong {
+    font-weight: bold;
+}
+dfn {
+    font-style: italic;
+}
 
 h1 {
     font-size: 2em;
@@ -56,7 +72,9 @@ mark {
     background: #ff0;
     color: #000;
 }
-small { font-size: 80%; }
+small {
+    font-size: 80%;
+}
 
 sub,
 sup {
@@ -65,17 +83,29 @@ sup {
     position: relative;
     vertical-align: baseline;
 }
-sup { top: -0.5em; }
-sub { bottom: -0.25em; }
-img { border: 0; }
-svg:not(:root) { overflow: hidden; }
-figure { margin: 1em 40px; }
+sup {
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}
+img {
+    border: 0;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+figure {
+    margin: 1em 40px;
+}
 
 hr {
     box-sizing: content-box;
     height: 0;
 }
-pre { overflow: auto; }
+pre {
+    overflow: auto;
+}
 
 code,
 kbd,
@@ -94,41 +124,55 @@ textarea {
     font: inherit;
     margin: 0;
 }
-button { overflow: visible; }
+button {
+    overflow: visible;
+}
 
 button,
-select { text-transform: none; }
+select {
+    text-transform: none;
+}
 
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
     -webkit-appearance: button;
     cursor: pointer;
 }
 
 button[disabled],
-html input[disabled] { cursor: default; }
+html input[disabled] {
+    cursor: default;
+}
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
     border: 0;
     padding: 0;
 }
-input { line-height: normal; }
+input {
+    line-height: normal;
+}
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
     box-sizing: border-box;
     padding: 0;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button { height: auto; }
-input[type="search"] { -webkit-appearance: textfield; }
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    height: auto;
+}
+input[type='search'] {
+    -webkit-appearance: textfield;
+}
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
 
 fieldset {
     border: 1px solid #c0c0c0;
@@ -140,8 +184,12 @@ legend {
     border: 0;
     padding: 0;
 }
-textarea { overflow: auto; }
-optgroup { font-weight: bold; }
+textarea {
+    overflow: auto;
+}
+optgroup {
+    font-weight: bold;
+}
 
 table {
     border-collapse: collapse;
@@ -149,7 +197,9 @@ table {
 }
 
 td,
-th { padding: 0; }
+th {
+    padding: 0;
+}
 
 /* ==========================================================================
       Icons - Sets up the icon font and respective classes
@@ -157,21 +207,19 @@ th { padding: 0; }
 
 /* Import the font file with the icons in it */
 @font-face {
-    font-family: "casper-icons";
-    src: url("../fonts/casper-icons.eot?v=1");
-    src:
-        url("../fonts/casper-icons.eot?v=1#iefix") format("embedded-opentype"),
-        url("../fonts/casper-icons.woff?v=1") format("woff"),
-        url("../fonts/casper-icons.ttf?v=1") format("truetype"),
-        url("../fonts/casper-icons.svg?v=1#icons") format("svg");
+    font-family: 'casper-icons';
+    src: url('../fonts/casper-icons.eot?v=1');
+    src: url('../fonts/casper-icons.eot?v=1#iefix') format('embedded-opentype'),
+        url('../fonts/casper-icons.woff?v=1') format('woff'), url('../fonts/casper-icons.ttf?v=1') format('truetype'),
+        url('../fonts/casper-icons.svg?v=1#icons') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 /* Apply these base styles to all icons */
-[class^="icon-"]::before,
-[class*=" icon-"]::before {
-    font-family: "casper-icons", "Open Sans", sans-serif;
+[class^='icon-']::before,
+[class*=' icon-']::before {
+    font-family: 'casper-icons', 'Open Sans', sans-serif;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -186,37 +234,37 @@ th { padding: 0; }
 /* Each icon is created by inserting the correct character into the
    content of the :before pseudo element. Like a boss. */
 .icon-ghost::before {
-    content: "\f600";
+    content: '\f600';
 }
 
 .icon-feed::before {
-    content: "\f601";
+    content: '\f601';
 }
 
 .icon-twitter::before {
-    content: "\f602";
+    content: '\f602';
     font-size: 1.1em;
 }
 
 .icon-google-plus::before {
-    content: "\f603";
+    content: '\f603';
 }
 
 .icon-facebook::before {
-    content: "\f604";
+    content: '\f604';
 }
 
 .icon-stats::before {
-    content: "\f606";
+    content: '\f606';
 }
 
 .icon-location::before {
-    content: "\f607";
+    content: '\f607';
     margin-left: -3px; /* Tracking fix */
 }
 
 .icon-link::before {
-    content: "\f608";
+    content: '\f608';
 }
 
 /*
@@ -239,9 +287,9 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    font-family: "Merriweather", serif;
-    letter-spacing: 0.01rem;
-    font-size: 1.8rem;
+    font-family: 'Scope One', serif;
+    letter-spacing: 0.02rem;
+    font-size: 2rem;
     line-height: 1.75em;
     color: #3a4145;
     -webkit-font-feature-settings: 'kern' 1;
@@ -270,7 +318,7 @@ h6 {
     color: #2e2e2e;
     line-height: 1.15em;
     margin: 0 0 0.4em;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-rendering: geometricPrecision;
 }
 
@@ -393,13 +441,17 @@ blockquote small {
     color: #ccc;
 }
 
-blockquote small::before { content: "\2014 \00A0"; }
+blockquote small::before {
+    content: '\2014 \00A0';
+}
 
 blockquote cite {
     font-weight: 700;
 }
 
-blockquote cite a { font-weight: normal; }
+blockquote cite a {
+    font-weight: normal;
+}
 
 mark {
     background-color: #fdffb6;
@@ -414,9 +466,9 @@ tt {
     border: #e3edf3 1px solid;
     background: #f7fafb;
     border-radius: 2px;
-    -webkit-font-feature-settings: "liga" 0;
-    -moz-font-feature-settings: "liga" 0;
-    font-feature-settings: "liga" 0;
+    -webkit-font-feature-settings: 'liga' 0;
+    -moz-font-feature-settings: 'liga' 0;
+    font-feature-settings: 'liga' 0;
 }
 
 pre {
@@ -454,9 +506,7 @@ kbd {
     font-weight: 700;
     background: #f4f4f4;
     border-radius: 4px;
-    box-shadow:
-        0 1px 0 rgba(0, 0, 0, 0.2),
-        0 1px 0 0 #fff inset;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 0 #fff inset;
 }
 
 table {
@@ -477,7 +527,9 @@ table td {
     border-top: #efefef 1px solid;
 }
 
-table th { color: #000; }
+table th {
+    color: #000;
+}
 
 table caption + thead tr:first-child th,
 table caption + thead tr:first-child td,
@@ -488,9 +540,13 @@ table thead:first-child tr:first-child td {
     border-top: 0;
 }
 
-table tbody + tbody { border-top: #efefef 2px solid; }
+table tbody + tbody {
+    border-top: #efefef 2px solid;
+}
 
-table table table { background-color: #fff; }
+table table table {
+    background-color: #fff;
+}
 
 table tbody > tr:nth-child(odd) > td,
 table tbody > tr:nth-child(odd) > th {
@@ -516,7 +572,7 @@ margin on the iframe, cause it breaks stuff. */
 
 textarea,
 select,
-input:not([type="radio"]):not([type="checkbox"]) {
+input:not([type='radio']):not([type='checkbox']) {
     width: 260px;
     padding: 6px 9px;
     margin: 0 0 5px;
@@ -540,19 +596,19 @@ textarea {
     min-height: 80px;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="number"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="time"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='search']:focus,
+input[type='tel']:focus,
+input[type='url']:focus,
+input[type='password']:focus,
+input[type='number']:focus,
+input[type='date']:focus,
+input[type='month']:focus,
+input[type='week']:focus,
+input[type='time']:focus,
+input[type='datetime']:focus,
+input[type='datetime-local']:focus,
 textarea:focus {
     border: #bbc7cc 1px solid;
     background: #fff;
@@ -595,11 +651,15 @@ button {
 /* Clears content */
 .clearfix::before,
 .clearfix::after {
-    content: " ";
+    content: ' ';
     display: table;
 }
-.clearfix::after { clear: both; }
-.clearfix { zoom: 1; }
+.clearfix::after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
 
 /* Hides content */
 .hidden {
@@ -613,6 +673,7 @@ button {
     position: relative;
     width: 80%;
     max-width: 710px;
+    top: 15px;
     margin: 0 auto;
 }
 
@@ -744,6 +805,6 @@ button {
 
     .inner {
         width: auto;
-        margin: 2rem auto;
+        margin: 4rem auto 0rem;
     }
 }

@@ -11,7 +11,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: block;
-    height: 500px;
+    height: 100px;
     padding: 1px 0 5px;
     width: auto;
 }
@@ -22,21 +22,21 @@
 
 @media only screen and (max-width: 900px) {
     .blog-logo img {
-        padding: 4px 0;
-        height: 200px;
+        padding: 0px 0 4px;
+        height: 60px;
     }
 }
 
 /* ==========================================================================
-       Media Queries - Smaller than 500px
+       Media Queries - Smaller than 400px
    ========================================================================== */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
     .blog-logo {
         padding: 5px;
     }
 
     .blog-logo img {
-        height: 400px;
+        height: 50px;
     }
 }
