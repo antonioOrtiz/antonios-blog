@@ -10,12 +10,12 @@ class MainHeader extends React.Component {
       'no-cover': !cover,
     });
 
-    const getStyle = () => {
-      if (cover) {
-        return { backgroundImage: `url("${cover}")` };
-      }
-      return null;
-    };
+    // const getStyle = () => {
+    //   if (cover) {
+    //     return { backgroundImage: `url("${cover}")` };
+    //   }
+    //   return null;
+    // };
 
     return (
       <header className={classes}>
