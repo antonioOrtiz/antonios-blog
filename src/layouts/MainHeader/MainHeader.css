@@ -100,7 +100,7 @@
     display: block;
     position: absolute;
     z-index: 100;
-    top: 350px;
+    top: 360px;
     bottom: 45px;
     left: 50%;
     margin-left: -16px;
@@ -119,8 +119,15 @@
 
 /* Chrome */
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    /* Safari and Chrome, if Chrome rule needed */
     .scroll-down {
-        top: 320px;
+        top: 360px;
+    }
+
+    /* Safari 5+ ONLY */
+    ::i-block-chrome,
+    .scroll-down {
+        top: 360px;
     }
 }
 
