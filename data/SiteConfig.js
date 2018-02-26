@@ -16,26 +16,26 @@ module.exports = {
   sitePaginationLimit: 10, // The max number of posts per page.
   googleAnalyticsID: 'UA-111982167-1', // GA tracking ID.
   siteSocialUrls: [
-    'https://github.com/haysclark/gatsby-starter-casper',
-    'https://twitter.com/gatsbyjs',
-    'mailto:gatsbyjs@example.com',
+    'https://github.com/antonioOrtiz/',
+    'https://linkedin.com/in/antonio-pavicevac-ortiz-1267752/',
+    'mailto:17antonio.ortiz@gmail.com',
   ],
   postDefaultCategoryID: 'Tech', // Default category for posts.
   // Links to social profiles/projects you want to display in the navigation bar.
   userLinks: [
     {
       label: 'GitHub',
-      url: 'https://github.com/haysclark/gatsby-starter-casper',
+      url: 'https://github.com/antonioOrtiz/',
       iconClassName: 'fa fa-github', // Disabled, see Navigation.jsx
     },
     {
-      label: 'Twitter',
-      url: 'https://twitter.com/gatsbyjs',
-      iconClassName: 'fa fa-twitter', // Disabled, see Navigation.jsx
+      label: 'Linkedin',
+      url: 'https://www.linkedin.com/in/antonio-pavicevac-ortiz-1267752/',
+      iconClassName: 'fa fa-linkedin', // Disabled, see Navigation.jsx
     },
     {
       label: 'Email',
-      url: 'mailto:gatsbyjs@example.com',
+      url: 'mailto:17antonio.ortiz@gmail.com',
       iconClassName: 'fa fa-envelope', // Disabled, see Navigation.jsx
     },
   ],
