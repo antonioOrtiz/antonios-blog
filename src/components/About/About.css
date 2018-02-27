@@ -1,1 +1,6 @@
 /** empty css file for component consistency **/
+.projectButton {
+  height: 40px;
+  width: 115px;
+  font-size: 1.34rem !important;
+}

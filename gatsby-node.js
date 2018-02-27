@@ -1,37 +1,34 @@
-const path = require("path");
-const _ = require("lodash");
-const webpackLodashPlugin = require("lodash-webpack-plugin");
-const siteConfig = require("./data/SiteConfig");
-const {
-  createPaginationPages,
-  createLinkedPages
-} = require("gatsby-pagination");
+const path = require('path');
+const _ = require('lodash');
+const webpackLodashPlugin = require('lodash-webpack-plugin');
+const siteConfig = require('./data/SiteConfig');
+const { createPaginationPages, createLinkedPages } = require('gatsby-pagination');
 
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators;
   let slug;
-  if (node.internal.type === "MarkdownRemark") {
+  if (node.internal.type === 'MarkdownRemark') {
     const fileNode = getNode(node.parent);
     const parsedFilePath = path.parse(fileNode.relativePath);
     if (
-      Object.prototype.hasOwnProperty.call(node, "frontmatter") &&
-      Object.prototype.hasOwnProperty.call(node.frontmatter, "slug")
+      Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
+      Object.prototype.hasOwnProperty.call(node.frontmatter, 'slug')
     ) {
       slug = `/${_.kebabCase(node.frontmatter.slug)}`;
     }
     if (
-      Object.prototype.hasOwnProperty.call(node, "frontmatter") &&
-      Object.prototype.hasOwnProperty.call(node.frontmatter, "title")
+      Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
+      Object.prototype.hasOwnProperty.call(node.frontmatter, 'title')
     ) {
       slug = `/${_.kebabCase(node.frontmatter.title)}`;
-    } else if (parsedFilePath.name !== "index" && parsedFilePath.dir !== "") {
+    } else if (parsedFilePath.name !== 'index' && parsedFilePath.dir !== '') {
       slug = `/${parsedFilePath.dir}/${parsedFilePath.name}/`;
-    } else if (parsedFilePath.dir === "") {
+    } else if (parsedFilePath.dir === '') {
       slug = `/${parsedFilePath.name}/`;
     } else {
       slug = `/${parsedFilePath.dir}/`;
     }
-    createNodeField({ node, name: "slug", value: slug });
+    createNodeField({ node, name: 'slug', value: slug });
   }
 };
 
@@ -39,11 +36,11 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
 
   return new Promise((resolve, reject) => {
-    const indexPage = path.resolve("src/templates/index.jsx");
-    const postPage = path.resolve("src/templates/post.jsx");
-    const tagPage = path.resolve("src/templates/tag.jsx");
-    const categoryPage = path.resolve("src/templates/category.jsx");
-    const authorPage = path.resolve("src/templates/author.jsx");
+    const indexPage = path.resolve('src/templates/index.jsx');
+    const postPage = path.resolve('src/templates/post.jsx');
+    const tagPage = path.resolve('src/templates/tag.jsx');
+    const categoryPage = path.resolve('src/templates/category.jsx');
+    const authorPage = path.resolve('src/templates/author.jsx');
     resolve(
       graphql(
         `
@@ -85,7 +82,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           createPage,
           edges: result.data.allMarkdownRemark.edges,
           component: indexPage,
-          limit: siteConfig.sitePaginationLimit
+          limit: siteConfig.sitePaginationLimit,
         });
 
         // Creates Posts
@@ -96,10 +93,10 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           edgeParser: edge => ({
             path: edge.node.fields.slug,
             context: {
-              slug: edge.node.fields.slug
-            }
+              slug: edge.node.fields.slug,
+            },
           }),
-          circular: true
+          circular: true,
         });
 
         const tagSet = new Set();
@@ -128,8 +125,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           }
         });
 
-        const tagFormatter = tag => route =>
-          `/tags/${_.kebabCase(tag)}/${route !== 1 ? route : ""}`;
+        const tagFormatter = tag => route => `/tags/${_.kebabCase(tag)}/${route !== 1 ? route : ''}`;
         const tagList = Array.from(tagSet);
         tagList.forEach(tag => {
           // Creates tag pages
@@ -140,8 +136,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             pathFormatter: tagFormatter(tag),
             limit: siteConfig.sitePaginationLimit,
             context: {
-              tag
-            }
+              tag,
+            },
           });
         });
 
@@ -151,8 +147,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             path: `/categories/${_.kebabCase(category)}/`,
             component: categoryPage,
             context: {
-              category
-            }
+              category,
+            },
           });
         });
 
@@ -162,8 +158,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             path: `/author/${_.kebabCase(author)}/`,
             component: authorPage,
             context: {
-              author
-            }
+              author,
+            },
           });
         });
       })
@@ -172,7 +168,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 };
 
 exports.modifyWebpackConfig = ({ config, stage }) => {
-  if (stage === "build-javascript") {
-    config.plugin("Lodash", webpackLodashPlugin, null);
+  if (stage === 'build-javascript') {
+    config.plugin('Lodash', webpackLodashPlugin, null);
   }
 };
