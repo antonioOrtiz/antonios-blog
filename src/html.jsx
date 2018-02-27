@@ -33,6 +33,7 @@ export default class HTML extends React.Component {
 
           {/* Styles'n'Scripts */}
           <link href="https://fonts.googleapis.com/css?family=Scope+One" rel="stylesheet" />
+          <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css" />
 
           {this.props.headComponents}
           <link rel="shortcut icon" href={favicon} />
