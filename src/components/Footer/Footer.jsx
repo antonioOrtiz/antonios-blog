@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import "./Footer.css";
+import React, { Component } from 'react';
+import './Footer.css';
 
 class Footer extends Component {
   render() {
@@ -20,8 +20,7 @@ class Footer extends Component {
     return (
       <footer className="site-footer clearfix">
         <section className="copyright">
-          <a href={url || "/"}>{label}</a> &copy;{" "}
-          {year || new Date().getFullYear()}
+          <a href={url || '/'}>{label}</a> &copy; {year || new Date().getFullYear()}
         </section>
         <PoweredBy show={promoteGatsby} />
       </footer>
