@@ -1,0 +1,12 @@
+.author-profile {
+    position: relative;
+    padding: 0 15px 5rem;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    max-width: 710px;
+    margin: 4rem auto;
+    padding-bottom: 4rem;
+    border-bottom: #5b2c13 1px solid;
+    word-wrap: break-word;
+}
