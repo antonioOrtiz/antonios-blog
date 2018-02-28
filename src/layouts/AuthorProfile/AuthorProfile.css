@@ -1,24 +1,17 @@
-.author-profile {
-    padding: 0 15px 5rem;
-    border-bottom: #ebf2f6 1px solid;
-    text-align: center;
-    height: 100%;
-}
-
 /* Add a little circle in the middle of the border-bottom */
 .author-profile::after {
     display: block;
     content: '';
     width: 7px;
     height: 7px;
-    border: #e7eef2 1px solid;
+    border: #5b2c13 1px solid;
     position: absolute;
     bottom: -5px;
     left: 50%;
     margin-left: -5px;
-    background: #fff;
+    background: #ffeed6;
     border-radius: 100%;
-    box-shadow: #fff 0 0 0 5px;
+    box-shadow: #5b2c13 0 0 0 5px;
 }
 
 /* ==========================================================================
