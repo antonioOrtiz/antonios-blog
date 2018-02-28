@@ -675,7 +675,7 @@ button {
     width: 80%;
     max-width: 710px;
     top: 15px;
-    margin: 0 auto;
+    margin: 0 auto 75px;
 }
 
 /* Centres vertically yo. (IE8+) */
