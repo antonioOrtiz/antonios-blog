@@ -16,18 +16,18 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     line-height: 1.75em;
-    color: #bbc7cc;
+    color: #572c16;
 }
 
 .site-footer a {
-    color: #bbc7cc;
+    color: #572c16;
     text-decoration: none;
     font-weight: bold;
 }
 
 .site-footer a:hover {
-    color: #bbc7cc;
-    border-bottom: #bbc7cc 1px solid;
+    color: #572c16;
+    border-bottom: #572c16 1px solid;
 }
 
 .poweredby {
