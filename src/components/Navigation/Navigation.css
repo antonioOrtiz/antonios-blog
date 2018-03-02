@@ -109,7 +109,8 @@
     font-size: 1.2rem;
     vertical-align: bottom;
     color: #b8b8b8;
-    content: counter(item, lower-roman);
+    /*    content: counter(item, lower-roman);
+*/
     counter-increment: item;
 }
 
