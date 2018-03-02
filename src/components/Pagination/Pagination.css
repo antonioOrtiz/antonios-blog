@@ -3,14 +3,14 @@
     width: 80%;
     max-width: 710px;
     margin: 4rem auto;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.3rem;
-    color: #9eabb3;
+    color: #ed842c;
     text-align: center;
 }
 
 .pagination a {
-    color: #9eabb3;
+    color: #ed842c;
     transition: all 0.2s ease;
 }
 
