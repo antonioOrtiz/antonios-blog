@@ -367,7 +367,7 @@ dl {
     -webkit-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
     -moz-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
     -o-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
-    margin: 0 0 1.75em;
+    margin: 0 0 0.85em;
     text-rendering: geometricPrecision;
 }
 
@@ -766,7 +766,7 @@ button {
     ol,
     dl {
         font-size: 0.95em;
-        margin: 0 0 2.5rem;
+        margin: 0 0 1.375rem;
     }
 
     h1,
@@ -808,4 +808,17 @@ button {
         width: auto;
         margin: 4rem auto 0rem;
     }
+}
+
+/* ==========================================================================
+       Prism.js override
+   ========================================================================== */
+
+pre code,
+pre tt {
+    font-size: smaller;
+}
+
+.token.punctuation {
+    color: #aee4f5;
 }
