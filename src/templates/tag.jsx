@@ -1,22 +1,22 @@
-import React from "react";
-import Helmet from "react-helmet";
-import PostListing from "../components/PostListing/PostListing";
-import config from "../../data/SiteConfig";
-import Drawer from "../layouts/Drawer/Drawer";
-import Navigation from "../components/Navigation/Navigation";
-import SiteWrapper from "../layouts/SiteWrapper/SiteWrapper";
-import MainHeader from "../layouts/MainHeader/MainHeader";
-import MainNav from "../layouts/MainNav/MainNav";
-import BlogLogo from "../components/BlogLogo/BlogLogo";
-import MenuButton from "../components/MenuButton/MenuButton";
-import PageTitle from "../components/PageTitle/PageTitle";
-import PageDescription from "../components/PageDescription/PageDescription";
-import Footer from "../components/Footer/Footer";
-import PaginatedContent from "../layouts/PaginatedContent/PaginatedContent";
+import React from 'react';
+import Helmet from 'react-helmet';
+import PostListing from '../components/PostListing/PostListing';
+import config from '../../data/SiteConfig';
+import Drawer from '../layouts/Drawer/Drawer';
+import Navigation from '../components/Navigation/Navigation';
+import SiteWrapper from '../layouts/SiteWrapper/SiteWrapper';
+import MainHeader from '../layouts/MainHeader/MainHeader';
+import MainNav from '../layouts/MainNav/MainNav';
+import BlogLogo from '../components/BlogLogo/BlogLogo';
+import MenuButton from '../components/MenuButton/MenuButton';
+import PageTitle from '../components/PageTitle/PageTitle';
+import PageDescription from '../components/PageDescription/PageDescription';
+import Footer from '../components/Footer/Footer';
+import PaginatedContent from '../layouts/PaginatedContent/PaginatedContent';
 
 class TagTemplate extends React.Component {
   state = {
-    menuOpen: false
+    menuOpen: false,
   };
 
   handleOnClick = evt => {
@@ -42,16 +42,7 @@ class TagTemplate extends React.Component {
   };
 
   render() {
-    const {
-      tag,
-      nodes,
-      page,
-      pages,
-      total,
-      limit,
-      prev,
-      next
-    } = this.props.pathContext;
+    const { tag, nodes, page, pages, total, limit, prev, next } = this.props.pathContext;
     const authorsEdges = this.props.data.authors.edges;
     return (
       <Drawer isOpen={this.state.menuOpen}>
@@ -66,38 +57,23 @@ class TagTemplate extends React.Component {
             <MainHeader className="tag-head" cover={tag.featureImage}>
               <MainNav className="clearfix" overlay>
                 <BlogLogo logo={config.siteLogo} title={config.siteTitle} />
-                <MenuButton
-                  navigation={config.siteNavigation}
-                  onClick={this.handleOnClick}
-                />
+                <MenuButton navigation={config.siteNavigation} onClick={this.handleOnClick} />
               </MainNav>
               <div className="vertical">
                 <div className="main-header-content inner">
                   <PageTitle text={tag} />
-                  <PageDescription
-                    text={tag.description || `A ${total}-post collection`}
-                  />
+                  <PageDescription text={tag.description || `A ${total}-post collection`} />
                 </div>
               </div>
             </MainHeader>
 
-            <PaginatedContent
-              page={page}
-              pages={pages}
-              total={total}
-              limit={limit}
-              prev={prev}
-              next={next}
-            >
+            <PaginatedContent page={page} pages={pages} total={total} limit={limit} prev={prev} next={next}>
               {/* PostListing component renders all the posts */}
               <PostListing postEdges={nodes} postAuthors={authorsEdges} />
             </PaginatedContent>
           </div>
           {/* The tiny footer at the very bottom */}
-          <Footer
-            copyright={config.copyright}
-            promoteGatsby={config.promoteGatsby}
-          />
+          <Footer copyright={config.copyright} promoteGatsby={config.promoteGatsby} />
         </SiteWrapper>
       </Drawer>
     );
