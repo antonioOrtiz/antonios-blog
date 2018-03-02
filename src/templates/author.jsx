@@ -1,28 +1,28 @@
-import React from "react";
-import Helmet from "react-helmet";
-import PostListing from "../components/PostListing/PostListing";
-import config from "../../data/SiteConfig";
-import Drawer from "../layouts/Drawer/Drawer";
-import Navigation from "../components/Navigation/Navigation";
-import SiteWrapper from "../layouts/SiteWrapper/SiteWrapper";
-import MainHeader from "../layouts/MainHeader/MainHeader";
-import MainNav from "../layouts/MainNav/MainNav";
-import BlogLogo from "../components/BlogLogo/BlogLogo";
-import MenuButton from "../components/MenuButton/MenuButton";
-import AuthorImage from "../components/AuthorImage/AuthorImage";
-import AuthorProfile from "../layouts/AuthorProfile/AuthorProfile";
-import AuthorName from "../components/AuthorName/AuthorName";
-import AuthorBio from "../components/AuthorBio/AuthorBio";
-import AuthorMeta from "../layouts/AuthorMeta/AuthorMeta";
-import AuthorLocation from "../components/AuthorLocation/AuthorLocation";
-import AuthorWebsite from "../components/AuthorWebsite/AuthorWebsite";
-import AuthorStats from "../components/AuthorStats/AuthorStats";
-import Footer from "../components/Footer/Footer";
-import SocialMediaIcons from "../components/SocialMediaIcons/SocialMediaIcons";
+import React from 'react';
+import Helmet from 'react-helmet';
+import PostListing from '../components/PostListing/PostListing';
+import config from '../../data/SiteConfig';
+import Drawer from '../layouts/Drawer/Drawer';
+import Navigation from '../components/Navigation/Navigation';
+import SiteWrapper from '../layouts/SiteWrapper/SiteWrapper';
+import MainHeader from '../layouts/MainHeader/MainHeader';
+import MainNav from '../layouts/MainNav/MainNav';
+import BlogLogo from '../components/BlogLogo/BlogLogo';
+import MenuButton from '../components/MenuButton/MenuButton';
+import AuthorImage from '../components/AuthorImage/AuthorImage';
+import AuthorProfile from '../layouts/AuthorProfile/AuthorProfile';
+import AuthorName from '../components/AuthorName/AuthorName';
+import AuthorBio from '../components/AuthorBio/AuthorBio';
+import AuthorMeta from '../layouts/AuthorMeta/AuthorMeta';
+import AuthorLocation from '../components/AuthorLocation/AuthorLocation';
+import AuthorWebsite from '../components/AuthorWebsite/AuthorWebsite';
+import AuthorStats from '../components/AuthorStats/AuthorStats';
+import Footer from '../components/Footer/Footer';
+import SocialMediaIcons from '../components/SocialMediaIcons/SocialMediaIcons';
 
 class AuthorTemplate extends React.Component {
   state = {
-    menuOpen: false
+    menuOpen: false,
   };
 
   handleOnClick = evt => {
@@ -50,8 +50,7 @@ class AuthorTemplate extends React.Component {
   render() {
     const { author, cover } = this.props.pathContext;
     const postEdges =
-      this.props.data.allMarkdownRemark &&
-      this.props.data.allMarkdownRemark.edges
+      this.props.data.allMarkdownRemark && this.props.data.allMarkdownRemark.edges
         ? this.props.data.allMarkdownRemark.edges
         : [];
     const authorsEdges =
@@ -71,10 +70,7 @@ class AuthorTemplate extends React.Component {
           <MainHeader className="author-head" cover={cover}>
             <MainNav overlay={cover}>
               <BlogLogo logo={config.siteLogo} title={config.siteTitle} />
-              <MenuButton
-                navigation={config.siteNavigation}
-                onClick={this.handleOnClick}
-              />
+              <MenuButton navigation={config.siteNavigation} onClick={this.handleOnClick} />
             </MainNav>
           </MainHeader>
 
@@ -96,10 +92,7 @@ class AuthorTemplate extends React.Component {
           <SocialMediaIcons urls={getAuthor().socialUrls} />
 
           {/* The tiny footer at the very bottom */}
-          <Footer
-            copyright={config.copyright}
-            promoteGatsby={config.promoteGatsby}
-          />
+          <Footer copyright={config.copyright} promoteGatsby={config.promoteGatsby} />
         </SiteWrapper>
       </Drawer>
     );
