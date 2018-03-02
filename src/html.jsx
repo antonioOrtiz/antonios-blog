@@ -36,7 +36,7 @@ export default class HTML extends React.Component {
           <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css" />
 
           {this.props.headComponents}
-          <link rel="shortcut icon" href={favicon} />
+          <link rel="shortcut icon" type="image/png" href={favicon} />
           {css}
         </head>
         <body>
