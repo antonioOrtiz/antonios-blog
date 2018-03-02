@@ -130,7 +130,7 @@
 
 .nav li a::after {
     display: inline-block;
-    content: ' .......................................................';
+    content: ' ';
     color: rgba(255, 255, 255, 0.2);
     margin-left: 5px;
 }
