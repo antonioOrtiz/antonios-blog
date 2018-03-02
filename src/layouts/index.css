@@ -65,7 +65,7 @@ dfn {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2em !important;
     margin: 0.67em 0;
 }
 
