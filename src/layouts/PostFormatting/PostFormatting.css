@@ -61,16 +61,16 @@ div.page-template .post-title {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
     line-height: 2.2rem;
-    color: #9eabb3;
+    color: #ed842c;
 }
 
 .post-meta a {
-    color: #9eabb3;
+    color: #ed842c;
     text-decoration: none;
 }
 
 .post-meta a:hover {
-    color: #9eabb3;
+    color: #ed842c;
     text-decoration: underline;
 }
 
