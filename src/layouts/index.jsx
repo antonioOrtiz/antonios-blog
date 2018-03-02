@@ -3,6 +3,8 @@ import Helmet from 'react-helmet';
 import config from '../../data/SiteConfig';
 import './index.css';
 
+require('prismjs/themes/prism-twilight.css');
+
 export default class MainLayout extends React.Component {
   getLocalTitle() {
     function capitalize(string) {
