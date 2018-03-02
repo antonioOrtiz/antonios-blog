@@ -1,17 +1,17 @@
 // import FontIcon from "react-md/lib/FontIcons";
-import Link from "gatsby-link";
+import Link from 'gatsby-link';
 
 function GetNavList(config) {
   const NavList = [
     {
-      primaryText: "Home",
+      primaryText: 'Home',
       // LeftIcon: <p>home</p>,
       component: Link,
-      to: "/"
+      to: '/',
     },
     {
-      divider: true
-    }
+      divider: true,
+    },
   ];
 
   if (config.userLinks) {
@@ -19,8 +19,8 @@ function GetNavList(config) {
       NavList.push({
         primaryText: link.label,
         // LeftIcon: <FontIcon forceSize iconClassName={link.iconClassName} />,
-        component: "a",
-        href: link.url
+        component: 'a',
+        href: link.url,
       });
     });
   }
@@ -28,10 +28,10 @@ function GetNavList(config) {
   NavList.push({ divider: true });
 
   NavList.push({
-    primaryText: "About",
+    primaryText: 'Work',
     // LeftIcon: <FontIcon>person</FontIcon>,
     component: Link,
-    to: "/about/"
+    to: '/work/',
   });
   return NavList;
 }
