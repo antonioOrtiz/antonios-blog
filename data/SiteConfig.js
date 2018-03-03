@@ -5,7 +5,7 @@ module.exports = {
   siteTitle: "Let's get out of the desert together!", // Site title.
   siteTitleAlt: 'GatsbyJS Casper Theme Starter', // Alternative site title for SEO.
   siteLogo: '/logos/logo.png', // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
-  siteUrl: 'https://haysclark.github.io', // Domain of your website without pathPrefix.
+  siteUrl: '/', // Domain of your website without pathPrefix.
   pathPrefix: '/gatsby-starter-casper', // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
   siteDescription: 'A blog about web development and stuff!', // Website description used for RSS feeds/meta description tag.
   siteCover: 'https://haysclark.github.io/gatsby-starter-casper/images/blog-cover.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
@@ -20,6 +20,7 @@ module.exports = {
     'https://linkedin.com/in/antonio-pavicevac-ortiz-1267752/',
     'mailto:17antonio.ortiz@gmail.com',
   ],
+  disqusShortname: 'antonios-blog', // Disqus shortname.
   postDefaultCategoryID: 'Tech', // Default category for posts.
   // Links to social profiles/projects you want to display in the navigation bar.
   userLinks: [
