@@ -1,8 +1,9 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { Link } from 'react-scroll';
+import { navigateTo } from 'gatsby-link';
 
-import { Button, Container, Header, Icon, Item } from 'semantic-ui-react';
+import { Container, Header, Item } from 'semantic-ui-react';
 import SEO from '../SEO/SEO';
 import config from '../../../data/SiteConfig';
 import Drawer from '../../layouts/Drawer/Drawer';
@@ -97,24 +98,22 @@ class Work extends React.Component {
                 <Item>
                   <Item.Image src="/assets/images/wireframe/image.png" />
                   <Item.Content>
-                    <Item.Header as="a">Beanie Boop</Item.Header>
+                    <Item.Header href="https://github.com/BeanieBoop" target="_blank" as="a">
+                      Beanie Boop
+                    </Item.Header>
                     <Item.Meta>
                       <span>January 2018</span>
                       <span>Category</span>
                     </Item.Meta>
                     <Item.Description>An Amazon clone that sells Beanie Babies!</Item.Description>
-                    <Item.Extra>
-                      <Button className="projectButton" floated="right" primary>
-                        Primary
-                        <Icon name="right chevron" />
-                      </Button>
-                    </Item.Extra>
                   </Item.Content>
                 </Item>
                 <Item>
                   <Item.Image src="/assets/images/wireframe/image.png" />
                   <Item.Content>
-                    <Item.Header as="a">Fit Square</Item.Header>
+                    <Item.Header href="https://github.com/capstone-fitsquare/fitsquare" target="_blank" as="a">
+                      Fit Square
+                    </Item.Header>
                     <Item.Meta>
                       <span>Date</span>
                       <span>Category</span>
@@ -122,12 +121,6 @@ class Work extends React.Component {
                     <Item.Description>
                       A food planning app that helps you build a 5-day meal plan based on your current fitness goal.
                     </Item.Description>
-                    <Item.Extra>
-                      <Button className="projectButton" primary floated="right">
-                        Primary
-                        <Icon name="right chevron" />
-                      </Button>
-                    </Item.Extra>
                   </Item.Content>
                 </Item>
               </Item.Group>
