@@ -1,8 +1,8 @@
 ---
 title: "What the heck is a JS framework anyway?!"
-cover: "https://unsplash.it/1280/500/?random?BoldMage"
+cover: "https://unsplash.it/1280/500/?random?BoldMage" 
 author: "Antonio Pavicevac-Ortiz"
-date: "07/25/2015"
+date: "2015-07-25"
 category: "tech"
 tags:
     - MVC, JavaScript

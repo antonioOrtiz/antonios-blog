@@ -2,7 +2,7 @@
 title: "Just build something!"
 cover: "https://unsplash.it/1280/500/?random?BoldMage"
 author: "Antonio Pavicevac-Ortiz"
-date: 07/10/2016
+date: "2016-10-07"
 category: "tech"
 tags:
     - code newb

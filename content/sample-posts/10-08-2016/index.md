@@ -1,8 +1,8 @@
 ---
 title: Aria!
-cover: "https://unsplash.it/1280/500/?random?BoldMage"
+cover: "./images/aortizHero.jpg"
 author: "Antonio Pavicevac-Ortiz"
-date: "10/08/2016"
+date: "2016-08-10"
 category: "tech"
 tags:
     -  hanselminutes Hello Ruby

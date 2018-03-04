@@ -2,7 +2,7 @@
 title: One Month Rails!
 cover: "https://unsplash.it/1280/500/?random?BoldMage"
 author: "Antonio Pavicevac-Ortiz"
-date: "07/20/2015"
+date: "2015-07-20"
 category: "tech"
 tags:
     - One Month Rails, Ruby, Rails

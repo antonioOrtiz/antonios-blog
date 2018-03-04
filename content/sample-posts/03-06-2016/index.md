@@ -2,7 +2,7 @@
 title: "The window is an Object (part 2)"
 cover: "https://unsplash.it/1280/500/?random?BoldMage"
 author: "Antonio Pavicevac-Ortiz"
-date: "03/06/2016"
+date: "2016-06-03"
 category: "tech"
 tags:
     - this keyword, call and apply methods
