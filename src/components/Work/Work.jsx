@@ -103,7 +103,6 @@ class Work extends React.Component {
                     </Item.Header>
                     <Item.Meta>
                       <span>January 2018</span>
-                      <span>Category</span>
                     </Item.Meta>
                     <Item.Description>An Amazon clone that sells Beanie Babies!</Item.Description>
                   </Item.Content>
@@ -115,8 +114,7 @@ class Work extends React.Component {
                       Fit Square
                     </Item.Header>
                     <Item.Meta>
-                      <span>Date</span>
-                      <span>Category</span>
+                      <span>February 2018</span>
                     </Item.Meta>
                     <Item.Description>
                       A food planning app that helps you build a 5-day meal plan based on your current fitness goal.
