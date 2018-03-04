@@ -47,7 +47,7 @@
 /* When the navigation is closed and there is no cover image */
 .nav-closed .no-cover .menu-button {
     border-color: #bfc8cd;
-    color: #9eabb3;
+    color: #766152;
 }
 
 .nav-closed .no-cover .menu-button:hover {
@@ -73,7 +73,7 @@
 }
 
 .icon-menu::before {
-    content: "\f609";
+    content: '\f609';
 }
 
 /* ==========================================================================
