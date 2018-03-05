@@ -1,7 +1,7 @@
-import React, { Component, createElement, isValidElement } from "react";
-import GetNavList from "./GetNavList";
-import "./Navigation.css";
-import SubscribeButton from "../SubscribeButton/SubscribeButton";
+import React, { Component, createElement, isValidElement } from 'react';
+import GetNavList from './GetNavList';
+import './Navigation.css';
+import SubscribeButton from '../SubscribeButton/SubscribeButton';
 
 const Divider = () => null;
 
@@ -20,7 +20,7 @@ const ListItem = props => {
 };
 
 const mapToListParts = (item, index) => {
-  if (typeof item === "string" || typeof item === "number") {
+  if (typeof item === 'string' || typeof item === 'number') {
     return createElement(ListItem, { key: item, primaryText: item });
   } else if (isValidElement(item)) {
     return item;
