@@ -2,9 +2,9 @@
 .page-title {
     margin: 10px 0;
     font-size: 5rem;
-    letter-spacing: -1px;
+    letter-spacing: 0;
     font-weight: 700;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'BrandonGrotesqueWeb-Regular', sans-serif;
     color: #fff;
 }
 
