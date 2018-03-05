@@ -2,12 +2,12 @@ module.exports = {
   blogPostDir: 'sample-posts', // The name of directory that contains your posts.
   blogAuthorDir: 'sample-authors', // The name of directory that contains your authors.
   blogAuthorId: 'antonio', // The default and fallback author ID used for blog posts without a defined author.
-  siteTitle: "Let's get out of the desert together!", // Site title.
+  siteTitle: "Ahoy! I'm Antonio Pavicevac-Ortiz!", // Site title.
   siteTitleAlt: 'GatsbyJS Casper Theme Starter', // Alternative site title for SEO.
   siteLogo: '/logos/logo.png', // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
   siteUrl: '/', // Domain of your website without pathPrefix.
   pathPrefix: '/gatsby-starter-casper', // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
-  siteDescription: 'A blog about web development and stuff!', // Website description used for RSS feeds/meta description tag.
+  siteDescription: "Let's get out of the desert together!", // Website description used for RSS feeds/meta description tag.
   siteCover: 'https://haysclark.github.io/gatsby-starter-casper/images/blog-cover.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   siteNavigation: true, // If navigation is enabled the Menu button will be visible
   siteRss: '/rss.xml', // Path to the RSS file.
