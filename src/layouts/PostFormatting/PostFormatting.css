@@ -58,10 +58,13 @@ div.page-template .post-title {
 .post-meta {
     display: block;
     margin: 1.75rem 0 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
-    line-height: 2.2rem;
+    font-family: 'BrandonGrotesqueWeb-Regular', sans-serif;
+    font-size: 1.75rem;
+    line-height: 3.5rem;
     color: #ed842c;
+}
+.post-meta img {
+    padding-top: 0;
 }
 
 .post-meta a {
