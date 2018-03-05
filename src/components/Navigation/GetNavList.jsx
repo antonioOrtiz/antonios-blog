@@ -21,6 +21,7 @@ function GetNavList(config) {
         // LeftIcon: <FontIcon forceSize iconClassName={link.iconClassName} />,
         component: 'a',
         href: link.url,
+        target: '_blank',
       });
     });
   }
