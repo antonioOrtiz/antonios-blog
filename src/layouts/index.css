@@ -217,10 +217,18 @@ th {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'BrandonGrotesqueWeb-Regular';
+    src: url('../fonts/35F340_0_0.eot');
+    src: url('../fonts/35F340_0_0.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/35F340_0_0.woff2') format('woff2'), url('../fonts/35F340_0_0.woff') format('woff'),
+        url('../fonts/35F340_0_0.ttf') format('truetype');
+}
+
 /* Apply these base styles to all icons */
 [class^='icon-']::before,
 [class*=' icon-']::before {
-    font-family: 'casper-icons', 'Open Sans', sans-serif;
+    font-family: 'casper-icons', 'BrandonGrotesqueWeb-Regular', sans-serif;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -319,7 +327,7 @@ h6 {
     color: #2e2e2e;
     line-height: 1.15em;
     margin: 0 0 0.4em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'BrandonGrotesqueWeb-Regular', sans-serif;
     text-rendering: geometricPrecision;
 }
 
@@ -578,7 +586,7 @@ input:not([type='radio']):not([type='checkbox']) {
     padding: 6px 9px;
     margin: 0 0 5px;
     outline: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'BrandonGrotesqueWeb-Regular', sans-serif;
     font-size: 1.6rem;
     font-weight: 100;
     line-height: 1.4em;
@@ -632,7 +640,7 @@ button {
     outline: none;
     text-decoration: none;
     color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'BrandonGrotesqueWeb-Regular', sans-serif;
     font-size: 11px; /* Hacks targeting Firefox. */
     line-height: 13px; /* Hacks targeting Firefox. */
     font-weight: 300;
@@ -806,7 +814,7 @@ button {
 
     .inner {
         width: auto;
-        margin: 4rem auto 0rem;
+        margin: 0rem auto 0rem;
     }
 }
 
