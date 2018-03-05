@@ -41,7 +41,7 @@
 }
 
 .read-next-story::before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     top: 0;
@@ -58,11 +58,11 @@
 }
 
 .read-next-story .post::before {
-    content: "Read This Next";
+    content: 'Read This Next';
     padding: 4px 10px 5px;
     text-transform: uppercase;
     font-size: 1.1rem;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'BrandonGrotesqueWeb-Regular', sans-serif;
     color: rgba(255, 255, 255, 0.8);
     border: rgba(255, 255, 255, 0.5) 1px solid;
     border-radius: 4px;
@@ -70,7 +70,7 @@
 }
 
 .read-next-story.prev .post::before {
-    content: "You Might Enjoy";
+    content: 'You Might Enjoy';
 }
 
 .read-next-story h2 {
