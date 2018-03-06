@@ -25,7 +25,6 @@
     border-radius: 100%;
     box-shadow: #5b2c13 0 0 0 5px;
 }
-
 .post-title a {
     text-decoration: none;
     color: #766153;
@@ -151,7 +150,18 @@ div.page-template .post-title {
     }
 
     .post-meta {
-        font-size: 1.3rem;
+        line-height: 1.7em;
         margin-top: 1rem;
     }
+}
+
+/* ==========================================================================
+       post override
+   ========================================================================== */
+
+.post-date {
+    font-size: 0.9em !important;
+}
+.post-meta {
+    font-size: 1em !important;
 }
