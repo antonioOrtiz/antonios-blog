@@ -53,12 +53,11 @@ class AuthorTemplate extends React.Component {
       this.props.data.allMarkdownRemark && this.props.data.allMarkdownRemark.edges
         ? this.props.data.allMarkdownRemark.edges
         : [];
-    const authorsEdges =
-      this.props.data.allAuthorsJson && this.props.data.allAuthorsJson.edges
-        ? this.props.data.allAuthorsJson.edges
-        : [];
-    const getAuthor = () => authorsEdges[0].node;
+    if (!this.props.data.allAuthorsJson || !this.props.data.allAuthorsJson.edges) return null;
 
+    const authorsEdges = this.props.data.allAuthorsJson.edges;
+
+    const getAuthor = () => authorsEdges[0].node;
     return (
       <Drawer className="author-template" isOpen={this.state.menuOpen}>
         <Helmet title={`Posts by "${author}" | ${config.siteTitle}`} />
