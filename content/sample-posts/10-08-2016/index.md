@@ -2,7 +2,7 @@
 title: Aria!
 cover: "./images/aortizHero.jpg"
 author: "Antonio Pavicevac-Ortiz"
-date: "2016-08-10"
+date: "2016-10-08"
 category: "tech"
 tags:
     -  hanselminutes Hello Ruby

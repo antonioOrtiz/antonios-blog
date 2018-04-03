@@ -112,7 +112,7 @@ class Work extends React.Component {
                 <Header as="h1" content="Projects " style={style.h1} textAlign="left" />{' '}
                 <Item>
                   <Item.Content>
-                    <Item.Header href="https://github.com/BeanieBoop" target="_blank" as="a">
+                    <Item.Header href="https://beanie-boop.herokuapp.com/" target="_blank" as="a">
                       Beanie Boop
                     </Item.Header>
                     <Item.Meta>
