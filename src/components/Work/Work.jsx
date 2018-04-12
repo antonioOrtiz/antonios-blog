@@ -112,6 +112,24 @@ class Work extends React.Component {
                 <Header as="h1" content="Projects " style={style.h1} textAlign="left" />{' '}
                 <Item>
                   <Item.Content>
+                    <Item.Header href="https://antonio-p-ortiz-github-battle.firebaseapp.com/" target="_blank" as="a">
+                      Github-battle
+                    </Item.Header>
+                    <Item.Meta>
+                      <span>April 2018</span>
+                    </Item.Meta>
+                    <Item.Description>
+                      A great practice app hosted on Firebase. Built primarly with React, Axios, React-Router and
+                      Webpack. I built it following the great{' '}
+                      <a href="https://learn.tylermcginnis.com/" target="_blank">
+                        React Fundamentals course
+                      </a>{' '}
+                      by Tyler Mcginnis!
+                    </Item.Description>
+                  </Item.Content>
+                </Item>
+                <Item>
+                  <Item.Content>
                     <Item.Header href="https://beanie-boop.herokuapp.com/" target="_blank" as="a">
                       Beanie Boop
                     </Item.Header>
@@ -130,7 +148,7 @@ class Work extends React.Component {
                       <span>February 2018</span>
                     </Item.Meta>
                     <Item.Description>
-                      A food planning app that helps you build a 5-day meal plan based on your current fitness goal.
+                      {`A food planning app which that helps you build a 5-day meal plan based on your current fitness goal.`}
                     </Item.Description>
                   </Item.Content>
                 </Item>

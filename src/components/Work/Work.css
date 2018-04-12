@@ -18,6 +18,11 @@
   overflow: hidden;
 }
 
+.ui.items > .item > .content > a.header,
+a {
+  color: #df682b;
+}
+
 .polygon {
   z-index: 0;
   height: 100%;
