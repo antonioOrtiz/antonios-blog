@@ -124,7 +124,7 @@ class Work extends React.Component {
                       <a href="https://learn.tylermcginnis.com/" target="_blank">
                         React Fundamentals course
                       </a>{' '}
-                      by Tyler Mcginnis!
+                      by Tyler McGinnis!
                     </Item.Description>
                   </Item.Content>
                 </Item>
