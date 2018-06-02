@@ -124,7 +124,7 @@ class Work extends React.Component {
                         by Tyler McGinnis!
                       </a>
                       {` `}
-                      {`Lately I am really trying to pin down the nuances of React without any external state library. Sticking to fundamental things like forms and state, props and state in general, composition and propTypes! `}
+                      {`Lately I am really trying to pin down the nuances of React without any external state library. Sticking to fundamental things like handling state in forms, props and state in general, composition and propTypes! `}
                     </Item.Description>
                   </Item.Content>
                 </Item>
