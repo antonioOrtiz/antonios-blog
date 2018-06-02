@@ -148,17 +148,6 @@ class Work extends React.Component {
                 </Item>
                 <Item>
                   <Item.Content>
-                    <Item.Header href="https://beanie-boop.herokuapp.com/" target="_blank" as="a">
-                      Beanie Boop
-                    </Item.Header>
-                    <Item.Meta>
-                      <span>January 2018</span>
-                    </Item.Meta>
-                    <Item.Description>{`An Amazon clone that sells Beanie Babies!`}</Item.Description>
-                  </Item.Content>
-                </Item>
-                <Item>
-                  <Item.Content>
                     <Item.Header href="https://github.com/capstone-fitsquare/fitsquare" target="_blank" as="a">
                       Fit Square
                     </Item.Header>
@@ -168,6 +157,17 @@ class Work extends React.Component {
                     <Item.Description>
                       {`A food planning app which that helps you build a 5-day meal plan based on your current fitness goal.`}
                     </Item.Description>
+                  </Item.Content>
+                </Item>
+                <Item>
+                  <Item.Content>
+                    <Item.Header href="https://beanie-boop.herokuapp.com/" target="_blank" as="a">
+                      Beanie Boop
+                    </Item.Header>
+                    <Item.Meta>
+                      <span>January 2018</span>
+                    </Item.Meta>
+                    <Item.Description>{`An Amazon clone that sells Beanie Babies!`}</Item.Description>
                   </Item.Content>
                 </Item>
                 <Item>
