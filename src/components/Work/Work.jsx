@@ -112,6 +112,24 @@ class Work extends React.Component {
                 <Header as="h1" content="Projects " style={style.h1} textAlign="left" />{' '}
                 <Item>
                   <Item.Content>
+                    <Item.Header href="https://antonio-p-ortiz-contacts-app.firebaseapp.com/" target="_blank" as="a">
+                      {`A contacts app!`}
+                    </Item.Header>
+                    <Item.Meta>
+                      <span>June 2018</span>
+                    </Item.Meta>
+                    <Item.Description>
+                      {`I built this CRUD app with with React, Express following a workshop hosted by`}{' '}
+                      <a href="https://learn.tylermcginnis.com/" target="_blank">
+                        by Tyler McGinnis!
+                      </a>
+                      {` `}
+                      {`Lately I am really trying to pin down the nuances of React without any external state library. Sticking to fundamental things like forms and state, props and state in general, composition and propTypes! `}
+                    </Item.Description>
+                  </Item.Content>
+                </Item>
+                <Item>
+                  <Item.Content>
                     <Item.Header href="https://antonio-p-ortiz-github-battle.firebaseapp.com/" target="_blank" as="a">
                       Github-battle
                     </Item.Header>
@@ -119,12 +137,12 @@ class Work extends React.Component {
                       <span>April 2018</span>
                     </Item.Meta>
                     <Item.Description>
-                      A great practice app hosted on Firebase. Built primarly with React, Axios, React-Router and
-                      Webpack. I built it following the great{' '}
+                      {`A great practice app hosted on Firebase. Built primarly with React, Axios, React-Router and
+                      Webpack. I built it following the great`}{' '}
                       <a href="https://learn.tylermcginnis.com/" target="_blank">
                         React Fundamentals course
                       </a>{' '}
-                      by Tyler McGinnis!
+                      {`by Tyler McGinnis!`}
                     </Item.Description>
                   </Item.Content>
                 </Item>
@@ -136,7 +154,7 @@ class Work extends React.Component {
                     <Item.Meta>
                       <span>January 2018</span>
                     </Item.Meta>
-                    <Item.Description>An Amazon clone that sells Beanie Babies!</Item.Description>
+                    <Item.Description>{`An Amazon clone that sells Beanie Babies!`}</Item.Description>
                   </Item.Content>
                 </Item>
                 <Item>
