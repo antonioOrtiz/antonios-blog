@@ -128,7 +128,7 @@ class Work extends React.Component {
                     </Item.Description>
                   </Item.Content>
                 </Item>
-                <Item>
+                {/*<Item>
                   <Item.Content>
                     <Item.Header href="https://antonio-p-ortiz-contacts-app.firebaseapp.com/" target="_blank" as="a">
                       {`A contacts app!`}
@@ -145,7 +145,7 @@ class Work extends React.Component {
                       {`Lately I am really trying to pin down the nuances of React without any external state library. Sticking to fundamental things like handling state in forms, props and state in general, composition and propTypes! `}
                     </Item.Description>
                   </Item.Content>
-                </Item>
+                </Item>*/}
                 <Item>
                   <Item.Content>
                     <Item.Header href="https://antonio-p-ortiz-github-battle.firebaseapp.com/" target="_blank" as="a">
