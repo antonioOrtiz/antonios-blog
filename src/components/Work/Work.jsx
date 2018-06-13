@@ -113,7 +113,7 @@ class Work extends React.Component {
                 <Item>
                   <Item.Content>
                     <Item.Header href="https://open-weather-map-project.herokuapp.com/" target="_blank" as="a">
-                      {`A contacts app!`}
+                      {`Open weather map project!`}
                     </Item.Header>
                     <Item.Meta>
                       <span>June 2018</span>
