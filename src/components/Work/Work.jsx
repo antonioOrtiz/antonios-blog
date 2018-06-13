@@ -112,6 +112,24 @@ class Work extends React.Component {
                 <Header as="h1" content="Projects " style={style.h1} textAlign="left" />{' '}
                 <Item>
                   <Item.Content>
+                    <Item.Header href="https://open-weather-map-project.herokuapp.com/" target="_blank" as="a">
+                      {`A contacts app!`}
+                    </Item.Header>
+                    <Item.Meta>
+                      <span>June 2018</span>
+                    </Item.Meta>
+                    <Item.Description>
+                      {`I built this app with with React, Axios, Webpack, Node-Sass and Skeleton.css`}{' '}
+                      {`Had a good time using the `}
+                      <a href="https://openweathermap.org/" target="_blank">
+                        Openweathermap
+                      </a>{' '}
+                      {` API...`}{' '}
+                    </Item.Description>
+                  </Item.Content>
+                </Item>
+                <Item>
+                  <Item.Content>
                     <Item.Header href="https://antonio-p-ortiz-contacts-app.firebaseapp.com/" target="_blank" as="a">
                       {`A contacts app!`}
                     </Item.Header>
