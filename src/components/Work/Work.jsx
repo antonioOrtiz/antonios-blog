@@ -18,7 +18,7 @@ import PageTitle from '../PageTitle/PageTitle';
 import PageDescription from '../PageDescription/PageDescription';
 import SocialMediaIcons from '../SocialMediaIcons/SocialMediaIcons';
 
-import Resume from '../../../docs/Antonio-Pavicevac-Ortiz.pdf';
+import Resume from '../../../docs/antonio-p-ortiz-resume.pdf';
 import './Work.css';
 
 class Work extends React.Component {
@@ -59,7 +59,7 @@ class Work extends React.Component {
     const { nodes } = this.props;
     const style = {
       h1: {
-        margin: '.5em 0 .5em',
+        margin: '.5em 0 0',
         fontSize: '55px',
       },
       button: {
@@ -69,10 +69,16 @@ class Work extends React.Component {
         padding: '15px 50px 15px',
         fontSize: '.75em',
       },
+      projectDate: {
+        fontWeight: 'bold',
+        fontSize: `1em`,
+        fontFamily: 'Lato, Helvetica Neue ,Arial, Helvetica, sans-serif',
+        color: '#000000'
+      }
     };
 
     return (
-      <Drawer className="home-template" isOpen={this.state.menuOpen}>
+      <Drawer className="home-template" isOpen={this.state.menuOpen} >
         <Helmet title={config.siteTitle} />
         <SEO postEdges={nodes} />
 
@@ -103,7 +109,9 @@ class Work extends React.Component {
               <Header as="h1" content="My background " style={style.h1} textAlign="left" />{' '}
               <Grid.Column width={16}>
                 {/* prettier-ignore */}
-                <Item.Description>{`Having completed my course study to become a Software Developer at FullStack Academy! \\o/ I really like every part of the stack, but  love the relationship between UI and an API. I'd like to find a position at a company where the people are focused on learning and teaching each other while solving problems!`}</Item.Description>
+                <Item.Description>{`My journey began as an aspiring Illustrator but soon was reforged into a career as a Graphic Designer with the Web playing a supporting role. However during the last 6+ years, I have moved into the Web Development industry fulltime! `} <br />{`It encomposes a combination of formalized learning as well as being self taught. My area of concentration is JavaScript. `}
+                  <br />{' '}
+                  {`I love projects which distill design, data and purpose to create something dynamic and fun! I really like every part of the stack, but  love the relationship between UI and an API. I'd like to find a position at a company where the people are focused on learning and teaching each others while solving problems!`}</Item.Description>
                 <Button as="a" href={Resume} target="_blank" style={style.button}>
                   Download resume
                 </Button>
@@ -112,11 +120,29 @@ class Work extends React.Component {
                 <Header as="h1" content="Projects " style={style.h1} textAlign="left" />{' '}
                 <Item>
                   <Item.Content>
+                    <Item.Header href="https://github.com/antonioOrtiz/hillfinder" target="_blank" as="a">
+                      {`Hillfinder`}
+                    </Item.Header>
+                    <Item.Meta>
+                      <span style={style.projectDate}>Ongoing</span>
+                    </Item.Meta>
+                    <Item.Description>
+                      {`Essentially this a progressive web app which returns a route entered to a destination, but with a twist...The route is on a downward elevation! Hillfinder!!! :) `}
+                      <br /> <br />
+                      {`At this point I've wired up MongoDB Atlas which was SOOOO simple and fun! Integrated Redux for state management, and Passport.js for authentication.`}{' '}
+                      <br /><br />
+                      {`I am using Next.js, Express.js, Redux, Passport.js, MongoDB Atlas and Semantic-UI-React for styles and some pretty great patterns for your logic in components!`}{' '}
+
+                    </Item.Description>
+                  </Item.Content>
+                </Item>
+                <Item>
+                  <Item.Content>
                     <Item.Header href="https://open-weather-map-project.herokuapp.com/" target="_blank" as="a">
                       {`Open weather map project!`}
                     </Item.Header>
                     <Item.Meta>
-                      <span>June 2018</span>
+                      <span style={style.projectDate}>June 2018</span>
                     </Item.Meta>
                     <Item.Description>
                       {`I built this app with with React, Axios, Webpack, Node-Sass and Skeleton.css`}{' '}
@@ -128,31 +154,14 @@ class Work extends React.Component {
                     </Item.Description>
                   </Item.Content>
                 </Item>
-                {/*<Item>
-                  <Item.Content>
-                    <Item.Header href="https://antonio-p-ortiz-contacts-app.firebaseapp.com/" target="_blank" as="a">
-                      {`A contacts app!`}
-                    </Item.Header>
-                    <Item.Meta>
-                      <span>June 2018</span>
-                    </Item.Meta>
-                    <Item.Description>
-                      {`I built this CRUD app with with React, Express following a workshop hosted by`}{' '}
-                      <a href="https://learn.tylermcginnis.com/" target="_blank">
-                        by Tyler McGinnis!
-                      </a>
-                      {` `}
-                      {`Lately I am really trying to pin down the nuances of React without any external state library. Sticking to fundamental things like handling state in forms, props and state in general, composition and propTypes! `}
-                    </Item.Description>
-                  </Item.Content>
-                </Item>*/}
+
                 <Item>
                   <Item.Content>
                     <Item.Header href="https://antonio-p-ortiz-github-battle.firebaseapp.com/" target="_blank" as="a">
                       Github-battle
                     </Item.Header>
                     <Item.Meta>
-                      <span>April 2018</span>
+                      <span style={style.projectDate}>April 2018</span>
                     </Item.Meta>
                     <Item.Description>
                       {`A great practice app hosted on Firebase. Built primarly with React, Axios, React-Router and
@@ -170,7 +179,7 @@ class Work extends React.Component {
                       Fit Square
                     </Item.Header>
                     <Item.Meta>
-                      <span>February 2018</span>
+                      <span style={style.projectDate}>February 2018</span>
                     </Item.Meta>
                     <Item.Description>
                       {`A food planning app which that helps you build a 5-day meal plan based on your current fitness goal.`}
@@ -183,7 +192,7 @@ class Work extends React.Component {
                       Beanie Boop
                     </Item.Header>
                     <Item.Meta>
-                      <span>January 2018</span>
+                      <span style={style.projectDate}>January 2018</span>
                     </Item.Meta>
                     <Item.Description>{`An Amazon clone that sells Beanie Babies!`}</Item.Description>
                   </Item.Content>
@@ -194,7 +203,7 @@ class Work extends React.Component {
                       Pinterest Clone
                     </Item.Header>
                     <Item.Meta>
-                      <span>May 2015</span>
+                      <span style={style.projectDate}>May 2015</span>
                     </Item.Meta>
                     <Item.Description>
                       {`Essentially my first app, I created while going through the "One Month Rails" course!`}

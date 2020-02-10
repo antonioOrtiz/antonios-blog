@@ -3,6 +3,9 @@ import Helmet from 'react-helmet';
 import config from '../../data/SiteConfig';
 import './index.css';
 
+import '../../static/styles/global.css';
+
+
 require('prismjs/themes/prism-twilight.css');
 
 export default class MainLayout extends React.Component {
