@@ -121,8 +121,7 @@ class Work extends React.Component {
                 <Item>
                   <Item.Content>
                     <Item.Header href="https://github.com/antonioOrtiz/hillfinder" target="_blank" as="a">
-<<<<<<< HEAD
-                      {`Hillfinder`}
+                      Hillfinder&#187;
                     </Item.Header>
                     <Item.Meta>
                       <span style={style.projectDate}>Ongoing</span>
@@ -140,18 +139,11 @@ class Work extends React.Component {
                 <Item>
                   <Item.Content>
                     <Item.Header href="https://open-weather-map-project.herokuapp.com/" target="_blank" as="a">
-                      {`Open weather map project!`}
-=======
-                      Hillfinder&#187;
->>>>>>> antonio-blog-2020
+                      Open weather map project!&#187;
                     </Item.Header>
 
                     <Item.Meta>
-<<<<<<< HEAD
                       <span style={style.projectDate}>June 2018</span>
-=======
-                      <span style={style.projectDate}>Ongoing</span>
->>>>>>> antonio-blog-2020
                     </Item.Meta>
                     <Item.Description>
                       {`Essentially this a progressive web app which returns a route entered to a destination, but with a twist...The route is on a downward elevation! Hillfinder!!! :) `}
@@ -163,8 +155,6 @@ class Work extends React.Component {
                     </Item.Description>
                   </Item.Content>
                 </Item>
-<<<<<<< HEAD
-=======
                 <Item>
                   <Item.Content>
                     <Item.Header href="https://open-weather-map-project.herokuapp.com/" target="_blank" as="a">
@@ -183,8 +173,6 @@ class Work extends React.Component {
                     </Item.Description>
                   </Item.Content>
                 </Item>
->>>>>>> antonio-blog-2020
-
                 <Item>
                   <Item.Content>
                     <Item.Header href="https://antonio-p-ortiz-github-battle.firebaseapp.com/" target="_blank" as="a">
