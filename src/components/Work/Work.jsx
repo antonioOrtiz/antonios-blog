@@ -17,8 +17,7 @@ import MenuButton from '../MenuButton/MenuButton';
 import PageTitle from '../PageTitle/PageTitle';
 import PageDescription from '../PageDescription/PageDescription';
 import SocialMediaIcons from '../SocialMediaIcons/SocialMediaIcons';
-
-import Resume from '../../../docs/antonio-p-ortiz-resume.pdf';
+import Resume from '../../../docs/Antonio-Pavicevac-Ortiz.pdf';
 import './Work.css';
 
 class Work extends React.Component {
