@@ -121,6 +121,7 @@ class Work extends React.Component {
                 <Item>
                   <Item.Content>
                     <Item.Header href="https://github.com/antonioOrtiz/hillfinder" target="_blank" as="a">
+<<<<<<< HEAD
                       {`Hillfinder`}
                     </Item.Header>
                     <Item.Meta>
@@ -140,6 +141,34 @@ class Work extends React.Component {
                   <Item.Content>
                     <Item.Header href="https://open-weather-map-project.herokuapp.com/" target="_blank" as="a">
                       {`Open weather map project!`}
+=======
+                      Hillfinder&#187;
+>>>>>>> antonio-blog-2020
+                    </Item.Header>
+
+                    <Item.Meta>
+<<<<<<< HEAD
+                      <span style={style.projectDate}>June 2018</span>
+=======
+                      <span style={style.projectDate}>Ongoing</span>
+>>>>>>> antonio-blog-2020
+                    </Item.Meta>
+                    <Item.Description>
+                      {`Essentially this a progressive web app which returns a route entered to a destination, but with a twist...The route is on a downward elevation! Hillfinder!!! :) `}
+                      <br /> <br />
+                      {`At this point I've wired up MongoDB Atlas which was SOOOO simple and fun! Integrated Redux for state management, and Passport.js for authentication.`}{' '}
+                      <br /><br />
+                      {`I am using Next.js, Express.js, Redux, Passport.js, MongoDB Atlas and Semantic-UI-React for styles and some pretty great patterns for your logic in components!`}{' '}
+
+                    </Item.Description>
+                  </Item.Content>
+                </Item>
+<<<<<<< HEAD
+=======
+                <Item>
+                  <Item.Content>
+                    <Item.Header href="https://open-weather-map-project.herokuapp.com/" target="_blank" as="a">
+                      Open weather map project!&#187;
                     </Item.Header>
                     <Item.Meta>
                       <span style={style.projectDate}>June 2018</span>
@@ -149,16 +178,17 @@ class Work extends React.Component {
                       {`Had a good time using the `}
                       <a href="https://openweathermap.org/" target="_blank">
                         Openweathermap
-                      </a>{' '}
+                      </a>{' '}&#187;
                       {` API...`}{' '}
                     </Item.Description>
                   </Item.Content>
                 </Item>
+>>>>>>> antonio-blog-2020
 
                 <Item>
                   <Item.Content>
                     <Item.Header href="https://antonio-p-ortiz-github-battle.firebaseapp.com/" target="_blank" as="a">
-                      Github-battle
+                      Github-battle&#187;
                     </Item.Header>
                     <Item.Meta>
                       <span style={style.projectDate}>April 2018</span>
@@ -176,7 +206,7 @@ class Work extends React.Component {
                 <Item>
                   <Item.Content>
                     <Item.Header href="https://github.com/capstone-fitsquare/fitsquare" target="_blank" as="a">
-                      Fit Square
+                      Fit Square&#187;
                     </Item.Header>
                     <Item.Meta>
                       <span style={style.projectDate}>February 2018</span>
@@ -189,7 +219,7 @@ class Work extends React.Component {
                 <Item>
                   <Item.Content>
                     <Item.Header href="https://beanie-boop.herokuapp.com/" target="_blank" as="a">
-                      Beanie Boop
+                      Beanie Boop&#187;
                     </Item.Header>
                     <Item.Meta>
                       <span style={style.projectDate}>January 2018</span>
@@ -200,7 +230,7 @@ class Work extends React.Component {
                 <Item>
                   <Item.Content>
                     <Item.Header href="https://ants-omr-pinteresting.herokuapp.com/" target="_blank" as="a">
-                      Pinterest Clone
+                      Pinterest Clone&#187;
                     </Item.Header>
                     <Item.Meta>
                       <span style={style.projectDate}>May 2015</span>
