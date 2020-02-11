@@ -121,8 +121,9 @@ class Work extends React.Component {
                 <Item>
                   <Item.Content>
                     <Item.Header href="https://github.com/antonioOrtiz/hillfinder" target="_blank" as="a">
-                      {`Hillfinder`}
+                      Hillfinder&#187;
                     </Item.Header>
+
                     <Item.Meta>
                       <span style={style.projectDate}>Ongoing</span>
                     </Item.Meta>
@@ -139,7 +140,7 @@ class Work extends React.Component {
                 <Item>
                   <Item.Content>
                     <Item.Header href="https://open-weather-map-project.herokuapp.com/" target="_blank" as="a">
-                      {`Open weather map project!`}
+                      Open weather map project!&#187;
                     </Item.Header>
                     <Item.Meta>
                       <span style={style.projectDate}>June 2018</span>
@@ -149,7 +150,7 @@ class Work extends React.Component {
                       {`Had a good time using the `}
                       <a href="https://openweathermap.org/" target="_blank">
                         Openweathermap
-                      </a>{' '}
+                      </a>{' '}&#187;
                       {` API...`}{' '}
                     </Item.Description>
                   </Item.Content>
@@ -158,7 +159,7 @@ class Work extends React.Component {
                 <Item>
                   <Item.Content>
                     <Item.Header href="https://antonio-p-ortiz-github-battle.firebaseapp.com/" target="_blank" as="a">
-                      Github-battle
+                      Github-battle&#187;
                     </Item.Header>
                     <Item.Meta>
                       <span style={style.projectDate}>April 2018</span>
@@ -176,7 +177,7 @@ class Work extends React.Component {
                 <Item>
                   <Item.Content>
                     <Item.Header href="https://github.com/capstone-fitsquare/fitsquare" target="_blank" as="a">
-                      Fit Square
+                      Fit Square&#187;
                     </Item.Header>
                     <Item.Meta>
                       <span style={style.projectDate}>February 2018</span>
@@ -189,7 +190,7 @@ class Work extends React.Component {
                 <Item>
                   <Item.Content>
                     <Item.Header href="https://beanie-boop.herokuapp.com/" target="_blank" as="a">
-                      Beanie Boop
+                      Beanie Boop&#187;
                     </Item.Header>
                     <Item.Meta>
                       <span style={style.projectDate}>January 2018</span>
@@ -200,7 +201,7 @@ class Work extends React.Component {
                 <Item>
                   <Item.Content>
                     <Item.Header href="https://ants-omr-pinteresting.herokuapp.com/" target="_blank" as="a">
-                      Pinterest Clone
+                      Pinterest Clone&#187;
                     </Item.Header>
                     <Item.Meta>
                       <span style={style.projectDate}>May 2015</span>
