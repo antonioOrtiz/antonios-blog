@@ -43,7 +43,8 @@
         "react-social-icons": "^2.7.0",
         "react-twitter-widgets": "^1.4.0",
         "semantic-ui-css": "^2.3.0",
-        "semantic-ui-react": "^0.78.3"
+        "semantic-ui-react": "^0.78.3",
+        "sharp": "^0.24.0"
     },
     "devDependencies": {
         "cli-glob": "^0.1.0",

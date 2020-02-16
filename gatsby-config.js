@@ -13,7 +13,8 @@ module.exports = {
       description: config.siteDescription,
       image_url: `${config.siteUrl + pathPrefix}/logos/logo-48.png`,
       author: config.siteRssAuthor,
-      copyright: `${config.copyright.label} © ${config.copyright.year || new Date().getFullYear()}`,
+      copyright: `${config.copyright.label} © ${config.copyright.year ||
+        new Date().getFullYear()}`,
     },
   },
   plugins: [
@@ -40,7 +41,8 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 710,
+              maxWidth: 500,
+              quality: 90,
             },
           },
           {

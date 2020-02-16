@@ -7,6 +7,7 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
+
 body {
     margin: 0;
     background-color: #ffeecf;
@@ -44,6 +45,7 @@ audio:not([controls]) {
 template {
     display: none;
 }
+
 a {
     background-color: transparent;
 }
@@ -52,6 +54,7 @@ a:active,
 a:hover {
     outline: 0;
 }
+
 abbr[title] {
     border-bottom: 1px dotted;
 }
@@ -60,6 +63,7 @@ b,
 strong {
     font-weight: bold;
 }
+
 dfn {
     font-style: italic;
 }
@@ -73,6 +77,7 @@ mark {
     background: #ff0;
     color: #000;
 }
+
 small {
     font-size: 80%;
 }
@@ -84,18 +89,23 @@ sup {
     position: relative;
     vertical-align: baseline;
 }
+
 sup {
     top: -0.5em;
 }
+
 sub {
     bottom: -0.25em;
 }
+
 img {
     border: 0;
 }
+
 svg:not(:root) {
     overflow: hidden;
 }
+
 figure {
     margin: 1em 40px;
 }
@@ -104,6 +114,7 @@ hr {
     box-sizing: content-box;
     height: 0;
 }
+
 pre {
     overflow: auto;
 }
@@ -125,6 +136,7 @@ textarea {
     font: inherit;
     margin: 0;
 }
+
 button {
     overflow: visible;
 }
@@ -152,6 +164,7 @@ input::-moz-focus-inner {
     border: 0;
     padding: 0;
 }
+
 input {
     line-height: normal;
 }
@@ -166,6 +179,7 @@ input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {
     height: auto;
 }
+
 input[type='search'] {
     -webkit-appearance: textfield;
 }
@@ -185,9 +199,11 @@ legend {
     border: 0;
     padding: 0;
 }
+
 textarea {
     overflow: auto;
 }
+
 optgroup {
     font-weight: bold;
 }
@@ -202,17 +218,18 @@ th {
     padding: 0;
 }
 
+
 /* ==========================================================================
       Icons - Sets up the icon font and respective classes
    ========================================================================== */
 
+
 /* Import the font file with the icons in it */
+
 @font-face {
     font-family: 'casper-icons';
     src: url('../fonts/casper-icons.eot?v=1');
-    src: url('../fonts/casper-icons.eot?v=1#iefix') format('embedded-opentype'),
-        url('../fonts/casper-icons.woff?v=1') format('woff'), url('../fonts/casper-icons.ttf?v=1') format('truetype'),
-        url('../fonts/casper-icons.svg?v=1#icons') format('svg');
+    src: url('../fonts/casper-icons.eot?v=1#iefix') format('embedded-opentype'), url('../fonts/casper-icons.woff?v=1') format('woff'), url('../fonts/casper-icons.ttf?v=1') format('truetype'), url('../fonts/casper-icons.svg?v=1#icons') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -220,12 +237,12 @@ th {
 @font-face {
     font-family: 'BrandonGrotesqueWeb-Regular';
     src: url('../fonts/35F340_0_0.eot');
-    src: url('../fonts/35F340_0_0.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/35F340_0_0.woff2') format('woff2'), url('../fonts/35F340_0_0.woff') format('woff'),
-        url('../fonts/35F340_0_0.ttf') format('truetype');
+    src: url('../fonts/35F340_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/35F340_0_0.woff2') format('woff2'), url('../fonts/35F340_0_0.woff') format('woff'), url('../fonts/35F340_0_0.ttf') format('truetype');
 }
 
+
 /* Apply these base styles to all icons */
+
 [class^='icon-']::before,
 [class*=' icon-']::before {
     font-family: 'casper-icons', 'BrandonGrotesqueWeb-Regular', sans-serif;
@@ -240,8 +257,10 @@ th {
     -moz-osx-font-smoothing: grayscale;
 }
 
+
 /* Each icon is created by inserting the correct character into the
    content of the :before pseudo element. Like a boss. */
+
 .icon-ghost::before {
     content: '\f600';
 }
@@ -269,18 +288,21 @@ th {
 
 .icon-location::before {
     content: '\f607';
-    margin-left: -3px; /* Tracking fix */
+    margin-left: -3px;
+    /* Tracking fix */
 }
 
 .icon-link::before {
     content: '\f608';
 }
 
+
 /*
     IMPORTANT: When making any changes to the icon font, be sure to increment
     the version number by 1 in the @font-face rule. `?v=1` becomes `?v=2`
     This forces browsers to download the new font file.
 */
+
 
 /* ==========================================================================
       General - Setting up some base styles
@@ -296,7 +318,7 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    font-family: 'Scope One', serif;
+    font-family: 'BrandonGrotesqueWeb-Regular', serif;
     letter-spacing: 0.02rem;
     font-size: 2rem;
     line-height: 1.75em;
@@ -417,7 +439,7 @@ li li {
     margin: 0;
 }
 
-li > p:last-of-type {
+li>p:last-of-type {
     margin-bottom: 0;
 }
 
@@ -540,16 +562,16 @@ table th {
     color: #000;
 }
 
-table caption + thead tr:first-child th,
-table caption + thead tr:first-child td,
-table colgroup + thead tr:first-child th,
-table colgroup + thead tr:first-child td,
+table caption+thead tr:first-child th,
+table caption+thead tr:first-child td,
+table colgroup+thead tr:first-child th,
+table colgroup+thead tr:first-child td,
 table thead:first-child tr:first-child th,
 table thead:first-child tr:first-child td {
     border-top: 0;
 }
 
-table tbody + tbody {
+table tbody+tbody {
     border-top: #efefef 2px solid;
 }
 
@@ -557,13 +579,13 @@ table table table {
     background-color: #fff;
 }
 
-table tbody > tr:nth-child(odd) > td,
-table tbody > tr:nth-child(odd) > th {
+table tbody>tr:nth-child(odd)>td,
+table tbody>tr:nth-child(odd)>th {
     background-color: #f6f6f6;
 }
 
-table.plain tbody > tr:nth-child(odd) > td,
-table.plain tbody > tr:nth-child(odd) > th {
+table.plain tbody>tr:nth-child(odd)>td,
+table.plain tbody>tr:nth-child(odd)>th {
     background: transparent;
 }
 
@@ -573,8 +595,10 @@ iframe,
     margin: 1.75em 0;
 }
 
+
 /* When a video is inside the fitvids wrapper, drop the
 margin on the iframe, cause it breaks stuff. */
+
 .fluid-width-video-wrapper iframe {
     margin: 0;
 }
@@ -641,8 +665,10 @@ button {
     text-decoration: none;
     color: #fff;
     font-family: 'BrandonGrotesqueWeb-Regular', sans-serif;
-    font-size: 11px; /* Hacks targeting Firefox. */
-    line-height: 13px; /* Hacks targeting Firefox. */
+    font-size: 11px;
+    /* Hacks targeting Firefox. */
+    line-height: 13px;
+    /* Hacks targeting Firefox. */
     font-weight: 300;
     text-align: center;
     letter-spacing: 1px;
@@ -653,31 +679,40 @@ button {
     background: #5ba4e5;
 }
 
+
 /* ==========================================================================
       Utilities - These things get used a lot
    ========================================================================== */
 
+
 /* Clears content */
+
 .clearfix::before,
 .clearfix::after {
     content: ' ';
     display: table;
 }
+
 .clearfix::after {
     clear: both;
 }
+
 .clearfix {
     zoom: 1;
 }
 
+
 /* Hides content */
+
 .hidden {
     text-indent: -9999px;
     visibility: hidden;
     display: none;
 }
 
+
 /* Creates a responsive wrapper that makes our content scale nicely */
+
 .inner {
     position: relative;
     width: 80%;
@@ -686,17 +721,22 @@ button {
     margin: 0 auto 75px;
 }
 
+
 /* Centres vertically yo. (IE8+) */
+
 .vertical {
     display: table-cell;
     vertical-align: middle;
 }
 
+
 /* ==========================================================================
       Third Party Elements - Embeds from other services
    ========================================================================== */
 
+
 /* Github */
+
 .gist table {
     margin: 0;
     font-size: 1.4rem;
@@ -711,10 +751,13 @@ button {
     min-width: 25px;
 }
 
+
 /* Pastebin */
+
 .content .embedPastebin {
     margin-bottom: 1.75em;
 }
+
 
 /* ==========================================================================
        Media Queries - Smaller than 900px
@@ -724,41 +767,34 @@ button {
     blockquote {
         margin-left: 0;
     }
-
     hr {
         margin: 2.4em 0;
     }
-
     ol,
     ul {
         padding-left: 2em;
     }
-
     h1 {
         font-size: 4.5rem;
         text-indent: -2px;
     }
-
     h2 {
         font-size: 3.6rem;
     }
-
     h3 {
         font-size: 3.1rem;
     }
-
     h4 {
         font-size: 2.5rem;
     }
-
     h5 {
         font-size: 2.2rem;
     }
-
     h6 {
         font-size: 1.8rem;
     }
 }
+
 
 /* ==========================================================================
        Media Queries - Smaller than 500px
@@ -768,7 +804,6 @@ button {
     hr {
         margin: 1.75em 0;
     }
-
     p,
     ul,
     ol,
@@ -776,7 +811,6 @@ button {
         font-size: 0.95em;
         margin: 0 0 1.375rem;
     }
-
     h1,
     h2,
     h3,
@@ -785,38 +819,32 @@ button {
     h6 {
         margin: 0 0 0.3em;
     }
-
     h1 {
         font-size: 2.8rem;
         letter-spacing: -1px;
     }
-
     h2 {
         font-size: 2.4rem;
         letter-spacing: 0;
     }
-
     h3 {
         font-size: 2.1rem;
     }
-
     h4 {
         font-size: 1.9rem;
     }
-
     h5 {
         font-size: 1.8rem;
     }
-
     h6 {
         font-size: 1.8rem;
     }
-
     .inner {
         width: auto;
         margin: 0rem auto 0rem;
     }
 }
+
 
 /* ==========================================================================
        Prism.js override

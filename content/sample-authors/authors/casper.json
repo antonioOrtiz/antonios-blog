@@ -1,9 +1,12 @@
 {
-  "id": "antonio",
-  "name": "Antonio Pavicevac-Ortiz",
-  "image": "/logos/star.png",
-  "location": "Queens, NewYork",
-  "bio":
-    "I just graduated from FullStack Academy; My focus specifically is JavaScript and would make a great addition to a team who seeks a Front-end developer with 1-2 years of experience. To gauge a bit of my sensibility, I am really into Kyle Simpson's book series \"You don't know JS\". I'd go into a blog-post type of description here, as to why I think the series is so great, but maybe that'll get you to contact me!",
-  "socialUrls": ["https://github.com/gatsbyjs", "https://twitter.com/antonio_ortiz", "mailto:17antonio.ortiz@gmail.com"]
+    "id": "antonio",
+    "name": "Antonio Pavicevac-Ortiz",
+    "image": "/logos/star.png",
+    "location": "Queens, NewYork",
+    "bio": "My journey began as an aspiring Illustrator but soon was reforged into a career as a Graphic Designer with the web playing a supporting role. However during the for the past 6+ years, I have moved into the web development industry full-time! My area of concentration is JavaScript—specifically using ReactJS/NextJS; And Redux, and MongoDB to create websites and apps to create something dynamic and fun!",
+    "socialUrls": [
+        "https://github.com/gatsbyjs",
+        "https://twitter.com/antonio_ortiz",
+        "mailto:17antonio.ortiz@gmail.com"
+    ]
 }
