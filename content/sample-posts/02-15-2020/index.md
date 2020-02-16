@@ -50,9 +50,11 @@ Anyway here are some links to some front-end/back-end libraries that do a lot of
 * [Express](https://expressjs.com/)
 
 * [Sails](https://sailsjs.com/)
-  <small>
 
-- Tyler McGinnis is a phenominal teacher; He has a wonderful way of applying abstractions to the programming concepts he is sharing. You might have noticed I didn't say JavaScript, React etc. That is because IMHO, I feel if you can picture applying abstractions or metaphors to another subject that is a good marker of a great teacher.
+<small>
+
+\* Tyler McGinnis is a phenominal teacher; He has a wonderful way of applying abstractions to the programming concepts he is sharing. You might have noticed I didn't say JavaScript, React etc. That is because IMHO, I feel if you can picture applying abstractions or metaphors to another subject that is a good marker of a great teacher.
 
 \*\* Full disclosure I had to change the routing system and go with [react-router](https://reacttraining.com/react-router/); Only because I couldn't figure out how to get some components from [react-semantic-ui](https://react.semantic-ui.com/) to play nice with the page system of Next.js
+
 </small>
